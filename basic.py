@@ -35,19 +35,19 @@ class Error:
 
 class IllegalCharError(Error):
   def __init__(self, pos_start, pos_end, details):
-    super().__init__(pos_start, pos_end, 'Illegal Character', details)
+    super().__init__(pos_start, pos_end, 'Unsa mani? Illegal Character? Usabi!', details)
 
 class ExpectedCharError(Error):
   def __init__(self, pos_start, pos_end, details):
-    super().__init__(pos_start, pos_end, 'Expected Character', details)
+    super().__init__(pos_start, pos_end, 'Unsa mani? Expected Character? Usabi!', details)
 
 class InvalidSyntaxError(Error):
   def __init__(self, pos_start, pos_end, details=''):
-    super().__init__(pos_start, pos_end, 'Invalid Syntax', details)
+    super().__init__(pos_start, pos_end, 'Unsa mani? Invalid Syntax? Usabi!', details)
 
 class RTError(Error):
   def __init__(self, pos_start, pos_end, details, context):
-    super().__init__(pos_start, pos_end, 'Runtime Error', details)
+    super().__init__(pos_start, pos_end, 'Unsa mani? Runtime Error? Usabi!', details)
     self.context = context
 
   def as_string(self):
