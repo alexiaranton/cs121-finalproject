@@ -1588,7 +1588,7 @@ class List(Value):
 class BaseFunction(Value):
   def __init__(self, name):
     super().__init__()
-    self.name = name or "<wala mailhi>"
+    self.name = name or "<anonymous>"
 
   def generate_new_context(self):
     new_context = Context(self.name, self.context, self.pos_start)
@@ -1902,7 +1902,7 @@ class SymbolTable:
     del self.symbols[name]
 
 #######################################
-# INTERPRETER
+# INTERPRETER 
 #######################################
 
 class Interpreter:
